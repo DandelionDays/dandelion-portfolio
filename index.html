@@ -2,7 +2,7 @@
 <html lang="en-US">
 	<head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial scale=1.0" />
 		<title>Dandelion Freelance Portfolio</title>
 		<link rel="icon" href="images/HakkaStroberiBrain.png" type="image/x-icon" />
 			<!--should also be able to save the icon as a .png rather than .ico; needs to be saved in same directory as index.html in order to work like this-->
@@ -14,7 +14,7 @@
 		<link rel="stylesheet" href="styles/styles.css">
 		<!--fonts-->
 		<script src="" defer></script> 
-			<!--the "defer" attribute tells the browser to load the JS after the page is finished parsing the HTML to avoid errors-->
+			<!--the "defer" attribute tells the browser to load the JS after the page is finished parsing the HTML to avoid errors. so what would be the reason to put this here instead of at the end of the body tag???-->
 	</head>
 	<body>
 		<header>
@@ -38,13 +38,21 @@
 			</nav>
 		</header>
 		<main>
-			<h2>creative professional specializing in vtuber/streamer/fandom content.</h2>
-			<ul>
-				<li>Web Development</li>
-				<li>Project Management</li>
-				<li>Illustration</li>
-				<li>Vocals</li>
-      </ul>
+      <article class="homepage-summary">
+        <h2>creative professional specializing in vtuber/streamer/fandom content.</h2>
+          <section class="summary-row-1"
+            <ul>
+              <li>Web Development</li>
+              <li>Project Management</li>
+            </ul>
+          </section>
+          <section class="summary-row-2"
+            <ul>
+              <li>Illustration</li>
+              <li>Vocals</li>
+            </ul>
+          </section>
+      </article>
 		</main>
 		<footer>
 			<p>(c) 2024 by Dandelion. All rights reserved.</p>
