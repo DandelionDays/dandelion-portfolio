@@ -4,6 +4,12 @@
   padding: 0;
   font-family: serif;
 }
-/*header{
-  display: flex;
-}*/
+header{
+  background: ;
+  display: flex; 
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav-list{
+  list-style: none; display: inline-block;
+}
