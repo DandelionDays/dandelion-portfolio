@@ -2,7 +2,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: serif;
+  font-family: Anaheim, Arial, Helvetica, sans-serif;
+}
+body{
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh; 
 }
 .header-main-footer-defaults{
   padding: 5px;
@@ -14,15 +19,31 @@ header{
   display: flex; 
   align-items: center;
   justify-content: space-evenly;
-
 }
 .header-logo{
-  display: inline-block;
+  display: flex; /*figured out to make the div for logo+name text have class=header-logo then apply display: flex to the div as WELL as to the header, so the div is a flex item of the header and the img+h1 are flex items of the div flex container*/
   align-items: center;
-  
 }
+  .header-img {
+    padding-right: 0.1rem;
+  }
 .nav-list{
   list-style: none; 
   display: inline-block;
 }
-
+main{
+  flex: 1;
+  display: flex;
+}
+#site-under-construction{
+  margin:auto;
+}
+footer{
+  align-self: center;
+}
+/* OK WOOPS LOL I APPLIED THESE TO THE WRONG SELECTOR, but it did generate an interesting design result of displaying the menu on the left as a 1/3rd width column which DID look pretty cool and I'd like to experiment with that for a different design sometime
+body{
+  display: flex;
+  align-self: center;
+  min-height: 100vh; 
+}*/
