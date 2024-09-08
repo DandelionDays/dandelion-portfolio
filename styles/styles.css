@@ -9,6 +9,7 @@ body{
   display: flex;
   flex-flow: column;
   min-height: 100vh; 
+  /*this works together with setting main{flex:1;} to create the sticky footer*/
 }
 header{
   background: #544E7A; /*565473, alt colour #544E7A or 68668C*/
@@ -17,29 +18,25 @@ header{
   align-items: center;
   justify-content: space-evenly;
   text-decoration: none;
-  height: 4.25rem;
+  height: fit-content;
 }
 .navbar-namelogo-div{
   display: flex; /*figured out to make the div for logo+name text have class=header-logo then apply display: flex to the div as WELL as to the header, so the div is a flex item of the header and the img+h1 are flex items of the div flex container*/
   align-items: center;
+  padding: 5px;
+  padding-top: 10px;
 }
 .navbar-logo{
-  padding-right: 0.1rem;
+  padding-right: 0.2rem;
 }
-ul{
-  display: flex;
-  list-style: none;
-  align-items: center;
+nav{
+  padding: auto;
 }
 header a{
   color:#FFFFFF;
   font-size: 1.25rem;
-  padding: 5px;
-  padding-top: 10px;
-  margin-top: auto;
-  margin-bottom: auto;
 }
-header a:hover{
+/*header a:hover{
   background-color: #B0AED1;
 }
 /*links general*/
@@ -61,8 +58,8 @@ header a:hover{
 
   }
 main{
-  flex: 1;
-  display: flex;
+  flex: 1; /*this is what gives the main content flex item the viewport height to push the footer to the bottom if the page content is not longer than the viewport height*/
+  display: flex; 
 }
 #site-under-construction{
   margin:auto;
