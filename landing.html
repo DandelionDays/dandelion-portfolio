@@ -14,16 +14,17 @@
 </head>
 <body>
   <header class="navbar">
-    <!--<div id="logo-name">
-      <img class="header-logo" src="images/dandelion-logo-50x50.png" alt="Dandelion's logo: a purple bunny looking up at a dandelion."/> 
-      <h1 class="header-logo">dandelion.</h1>
-    </div> -->
-    <a href="index.html">
+    <!--ACTUALLY MAKING THE ENTIRE THING A CLICKABLE BLOCK LINK IS APPARENTLY TERRIBLE FOR SCREEN READERS because it'll make the entire div be announced.
+    <a href="index.html"> 
       <div class="navbar-namelogo-div">
         <img class="navbar-logo" src="images/dandelion-logo-justflower.png" alt="Dandelion's logo: a purple bunny looking up at a dandelion."/> 
         <h1>dandelion.</h1>
       </div>
-    </a>
+    </a>-->
+    <div class="navbar-namelogo-div">
+      <img class="navbar-logo" src="images/dandelion-logo-justflower.png" alt="Dandelion's logo: a purple bunny looking up at a dandelion."/> 
+      <a href="index.html"><h1>dandelion.</h1></a>
+    </div> <!--this honestly doesn't make any major visual/functional difference, so I think I'll stick with just linking the -->
     <!--
   	<nav>
       <ul>
